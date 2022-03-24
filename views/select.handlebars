@@ -1,0 +1,24 @@
+<table>
+  <thead>
+    <tr>
+      <th>Action</th>
+      <th>Id</th>
+      <th>Nome</th>
+      <th>Email</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#data}}
+    <tr>
+      <td>
+        <a href="update/{{id}}"><abbr title="Editar"><img src="/imgs/editar.png"></abbr></a>
+        <a href="delete/{{id}}" class="delete"><abbr title="Excluir"><img src="/imgs/lixeira.png"></abbr></a>
+      </td>
+      <td>{{id}}</td>
+      <td>{{nome}}</td>
+      <td>{{email}}</td>
+    </tr>
+    {{/data}}
+  </tbody>
+</table>
+<a href="/" class="voltar">Voltar</a>

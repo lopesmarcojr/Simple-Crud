@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My CRUD in NodeJS</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <div class="update">
+      <div class="form-update">
+        <h1>Atualizar dados do usuário</h1>
+        <form action="/controllerUpdate" method="POST">
+            <input type="hidden" placeholder="Id" name="id" value={{id}}>
+            <input type="text" placeholder="Nome" name="nome" value={{nome}}>
+            <input type="text" placeholder="Email" name="email" value={{email}}>
+            <input type="password" placeholder="Senha" name="senha" value={{senha}}>
+            <button type="submit">Atualizar</button>
+        </form>
+            <a href="/select">Voltar</a>
+      </div>
+  </div>
+
+</body>
+</html>
+
